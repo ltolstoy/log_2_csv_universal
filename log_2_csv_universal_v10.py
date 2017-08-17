@@ -43,7 +43,7 @@ def mail_notification_sendgrid(subject, text):
     msg['From'] = me
     msg['To'] = ",".join(you)
     s = smtplib.SMTP('smtp.sendgrid.net')
-    s.login('apikey', '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')
+    s.login('apikey', 'key_goes_here')
     s.sendmail(me, you, msg.as_string())
     s.quit()
 
